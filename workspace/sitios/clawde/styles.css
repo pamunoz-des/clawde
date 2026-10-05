@@ -53,3 +53,39 @@ body.dark header p { color: #e7a58b; }
 body.dark .card { background: #2b2b28; border-color: #55534c; }
 body.dark button { color: #e7a58b; border-color: #e7a58b; }
 body.dark button:hover { background: #3c302a; }
+
+/* Funcionalidades pendientes */
+#funcionalidades-pendientes {
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+.card.card-pending {
+  background: #eeeeec;
+  border: 1px solid #d3d3ce;
+  color: #555550;
+  box-shadow: none;
+}
+.card.card-pending h3 {
+  color: #555550;
+}
+.pending-label {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #d8d8d3;
+  color: #454540;
+  font-size: 12px;
+  font-weight: 600;
+}
+body.dark .card.card-pending {
+  background: #30302e;
+  border-color: #494945;
+  color: #bdbdb5;
+}
+body.dark .card.card-pending h3 {
+  color: #bdbdb5;
+}
+body.dark .pending-label {
+  background: #454541;
+  color: #ddddD5;
+}
