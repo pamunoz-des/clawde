@@ -1,0 +1,17 @@
+/*
+!/.gitignore
+!/compose.yaml
+!/compose.override.yaml
+!/personalizacion/
+/personalizacion/*
+!/personalizacion/custom.css
+!/personalizacion/logo-clawde.png
+!/workspace/
+/workspace/*
+!/workspace/sitios/
+/workspace/sitios/*
+!/workspace/sitios/clawde/
+/workspace/sitios/clawde/*
+!/workspace/sitios/clawde/index.html
+!/workspace/sitios/clawde/styles.css
+!/workspace/sitios/clawde/script.js

@@ -1,0 +1,180 @@
+/* Claude Casero: apariencia cÃƒÂ¡lida para el tema Light */
+html.light {
+    --cc-fondo: #faf9f5;
+    --cc-panel: #f0eee6;
+    --cc-texto: #302f2b;
+    --cc-borde: #dedbd2;
+    --cc-acento: #c87859;
+}
+
+html.light,
+html.light body {
+    background-color: var(--cc-fondo) !important;
+    color: var(--cc-texto) !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html.light .bg-white,
+html.light .bg-gray-50 {
+    background-color: var(--cc-fondo) !important;
+}
+
+html.light #sidebar {
+    background-color: var(--cc-panel) !important;
+    border-right: 1px solid var(--cc-borde) !important;
+}
+
+html.light #sidebar .bg-gray-50,
+html.light #sidebar .bg-gray-100 {
+    background-color: var(--cc-panel) !important;
+}
+
+html.light #sidebar a:hover,
+html.light #sidebar button:hover {
+    background-color: #e7e3d9 !important;
+}
+
+html.light #chat-input {
+    color: var(--cc-texto) !important;
+}
+
+html.light textarea,
+html.light input[type="text"],
+html.light input[type="search"] {
+    color: var(--cc-texto) !important;
+}
+
+html.light .prose {
+    color: var(--cc-texto) !important;
+    line-height: 1.75;
+}
+
+html.light .prose h1,
+html.light .prose h2,
+html.light .prose h3 {
+    color: var(--cc-texto) !important;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+html.light .prose a {
+    color: #a45438 !important;
+}
+
+html.light .prose pre {
+    border: 1px solid var(--cc-borde);
+    border-radius: 14px;
+}
+
+html.light ::selection {
+    background-color: #ecd4c4;
+    color: #302f2b;
+}
+
+/* Segunda etapa: lectura y cuadro de escritura */
+html.light .prose {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+html.light #sidebar {
+    font-size: 14px;
+}
+
+html.light #sidebar a,
+html.light #sidebar button {
+    border-radius: 9px;
+}
+
+html.light #chat-input {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+html.light form:has(#chat-input) {
+    background-color: #fffefa !important;
+    border: 1px solid #dedbd2 !important;
+    border-radius: 22px !important;
+    box-shadow: 0 5px 18px rgba(48, 47, 43, 0.06) !important;
+}
+
+html.light form:has(#chat-input):focus-within {
+    border-color: #c87859 !important;
+}
+
+html.light .prose :not(pre) > code {
+    background-color: #eeeae1;
+    color: #895039;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+/* Evitar el doble marco del cuadro de escritura */
+html.light form:has(#chat-input) {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+html.light form:has(#chat-input):focus-within {
+    border: none !important;
+}
+
+/* TipografÃ­a de las respuestas */
+html.light .chat-assistant .markdown-prose,
+html.light .chat-assistant .markdown-prose :is(p, li, blockquote, h1, h2, h3, h4, strong, em) {
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+
+html.light .chat-assistant .markdown-prose {
+    font-size: 17px !important;
+    line-height: 1.75 !important;
+    color: #302f2b !important;
+}
+
+/* CÃ³digo y controles del editor */
+html.light .chat-assistant .markdown-prose :is(code, pre, .cm-editor, .cm-scroller, .cm-content, .cm-line) {
+    font-family: Consolas, "Cascadia Code", monospace !important;
+}
+
+html.light .chat-assistant .markdown-prose button {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+
+/* Logo Clawde en acceso */
+body:not(:has(#sidebar)) form:has(input[type="email"])::before {
+    content: "";
+    display: block;
+    width: min(320px, 85%);
+    height: 150px;
+    margin: 0 auto 28px;
+    background-image: url("/static/logo-clawde.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* Título de la pantalla de acceso */
+body:not(:has(#sidebar)):has(form input[type="email"])
+div.text-2xl.font-normal {
+    font-size: 0 !important;
+}
+
+body:not(:has(#sidebar)):has(form input[type="email"])
+div.text-2xl.font-normal::after {
+    content: "Sign in";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Nombre en la barra lateral */
+#sidebar-webui-name {
+    font-size: 0 !important;
+}
+
+#sidebar-webui-name::after {
+    content: "Clawde";
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+}

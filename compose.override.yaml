@@ -1,0 +1,30 @@
+services:
+  searxng:
+    image: searxng/searxng@sha256:c642712fcedcdaa78fac44f71eada86aff510745826ba1bd1a368211fea2ce7f
+    restart: unless-stopped
+    volumes:
+      - ./searxng:/etc/searxng
+    mem_limit: 1g
+    cpus: 1
+
+  open-terminal:
+    image: ghcr.io/open-webui/open-terminal@sha256:81a5394b3cd4ae32adb600f2135f09ee124de37f26b0a780e2f5692472c0fc5c
+    restart: unless-stopped
+    environment:
+      OPEN_TERMINAL_API_KEY: ${OPEN_TERMINAL_API_KEY}
+    volumes:
+      - ./workspace:/home/user
+    mem_limit: 2g
+    cpus: 2
+
+  webui:
+    volumes:
+      - type: bind
+        source: ./personalizacion/custom.css
+        target: /app/backend/open_webui/static/custom.css
+        read_only: true
+
+      - type: bind
+        source: ./personalizacion/logo-clawde.png
+        target: /app/backend/open_webui/static/logo-clawde.png
+        read_only: true
