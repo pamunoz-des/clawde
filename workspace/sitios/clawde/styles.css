@@ -89,3 +89,29 @@ body.dark .pending-label {
   background: #454541;
   color: #ddddD5;
 }
+
+/* Logo personalizado */
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.site-logo {
+  width: clamp(64px, 10vw, 96px);
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.site-brand h1 {
+  margin: 0;
+}
+
+/* Logo principal ampliado */
+.site-brand {
+  display: block;
+}
+.site-brand .site-logo {
+  display: block;
+  width: min(380px, 100%);
+  height: auto;
+}
