@@ -21,3 +21,6 @@
 !/searxng/
 /searxng/*
 !/searxng/settings.example.yml
+!/scripts/
+/scripts/*
+!/scripts/Preparar.ps1
