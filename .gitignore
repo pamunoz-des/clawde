@@ -18,3 +18,6 @@
 !/workspace/sitios/clawde/logo-clawde.png
 !/README.md
 !/.env.example
+!/searxng/
+/searxng/*
+!/searxng/settings.example.yml

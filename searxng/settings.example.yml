@@ -1,0 +1,15 @@
+# Para una instalación nueva:
+# Copiar como settings.yml y reemplazar la clave antes de iniciar.
+# Plantilla para el servicio interno de Docker, sin puerto publicado.
+
+use_default_settings: true
+
+search:
+  formats:
+    - html
+    - json
+
+server:
+  secret_key: "REEMPLAZAR_POR_UNA_CLAVE_ALEATORIA"
+  limiter: false
+  public_instance: false
