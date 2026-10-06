@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clawde — Tu IA local</title>
-  <link rel="stylesheet" href="./styles.css?v=20261005211948">
+  <link rel="stylesheet" href="./styles.css?v=20261005220108">
 <link rel="icon" type="image/png" href="./logo-clawde.png">
 </head>
 <body>
@@ -385,8 +385,83 @@
 </div>
       </div>
     </section>
+<section id="arquitectura" aria-labelledby="arquitectura-titulo">
+  <h2 id="arquitectura-titulo">Dentro de Clawde</h2>
+  <p>Una vista de las piezas del laboratorio: modelos locales, herramientas y servicios externos.</p>
+  <p class="architecture-legend">Los componentes en gris están pendientes por integrar o completar.</p>
+
+  <div class="architecture-diagram" tabindex="0"
+       role="region" aria-label="Diagrama de componentes de Clawde">
+    <pre class="mermaid">
+flowchart TB
+    U["Usuario"] --> UI["Clawde · Open WebUI"]
+
+    subgraph LOCAL["Laptop Windows · Docker Desktop / WSL2"]
+        UI --> OL["Ollama"]
+        OL --> MOD["Qwen3 · Qwen3-VL · DeepSeek-R1"]
+        UI --> KB["Documentos y colecciones"]
+        UI --> VOZ["Transcripción y respuesta por voz"]
+        UI --> SX["SearXNG · búsqueda web"]
+        UI --> OT["Open Terminal"]
+        OT --> WS["Workspace compartido"]
+        UI --> CT["Tool CoinMarketCap · BTC / ADA"]
+        CT --> CACHE["Caché de 60 segundos"]
+        UI --> CF["ComfyUI Desktop · imágenes"]
+        UI --> DATA["Volúmenes y configuración"]
+        OL --> DATA
+        DATA --> BK["Respaldos y restauración"]
+        WS --> BK
+    end
+
+    subgraph EXT["Servicios externos"]
+        SX --> WEB["Internet"]
+        CT --> CMC["API CoinMarketCap"]
+        GH["GitHub · código y herramientas"]
+        GH --> AZ["Azure · www.clawde.cl"]
+    end
+
+    subgraph PEND["Pendiente"]
+        HIST["Historial de precios y alertas"]
+        TV["TradingView"]
+        ART["Panel de archivos generados"]
+        CODE["Programación autónoma"]
+        MEM["Memoria y automatizaciones"]
+        WF["Edición y selección de workflows"]
+        PT["PolyTalk"]
+        EXE["Aplicación de escritorio"]
+    end
+
+    CT -.-> HIST
+    UI -.-> TV
+    WS -.-> ART
+    OT -.-> CODE
+    UI -.-> MEM
+    CF -.-> WF
+    VOZ -.-> PT
+    EXE -.-> UI
+
+    classDef pending fill:#d1d5db,stroke:#9ca3af,color:#374151
+    class HIST,TV,ART,CODE,MEM,WF,PT,EXE pending
+    </pre>
+  </div>
+
+  <p class="architecture-note">
+    Azure aloja este sitio de presentación. Los modelos y herramientas de
+    Clawde se ejecutan en el laptop. Los respaldos Docker no incluyen
+    automáticamente la instalación, custom nodes ni modelos de ComfyUI Desktop.
+  </p>
+</section>
 </main>
   <script src="./script.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: true,
+    securityLevel: "strict",
+    theme: "neutral",
+    flowchart: { htmlLabels: false }
+  });
+</script>
 </body>
 </html>
 

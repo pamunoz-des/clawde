@@ -1,4 +1,4 @@
-﻿* { box-sizing: border-box; }
+* { box-sizing: border-box; }
 body {
   margin: 0;
   background: #faf9f5;
@@ -195,6 +195,40 @@ body.dark .pending-label {
   width: max-content;
 }
 body.dark #creador .ascii-scroll {
+  background: #faf9f5;
+  color: #252525;
+}
+/* Diagrama de componentes */
+#arquitectura {
+  margin: 56px 0;
+}
+.architecture-legend,
+.architecture-note {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.architecture-diagram {
+  overflow: auto;
+  padding: 24px;
+  margin: 24px 0;
+  background: #faf9f5;
+  color: #252525;
+  border: 1px solid #ddd8cf;
+  border-radius: 18px;
+}
+#arquitectura .mermaid {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+#arquitectura .mermaid svg {
+  display: block;
+  width: 100%;
+  min-width: 900px;
+  height: auto;
+  margin: auto;
+}
+body.dark .architecture-diagram {
   background: #faf9f5;
   color: #252525;
 }
