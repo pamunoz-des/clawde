@@ -1,10 +1,13 @@
-   CCCC  L       A    W       W  DDDD   EEEEE
-  C      L      A A   W       W  D   D  E
-  C      L     AAAAA  W   W   W  D   D  EEEE
-  C      L     A   A   W W W W   D   D  E
-   CCCC  LLLLL A   A    W   W    DDDD   EEEEE
+<!-- clawde-ascii -->
+~~~text
+  CCCC  L       A    W       W  DDDD   EEEEE
+ C      L      A A   W       W  D   D  E
+ C      L     AAAAA  W   W   W  D   D  EEEE
+ C      L     A   A   W W W W   D   D  E
+  CCCC  LLLLL A   A    W   W    DDDD   EEEEE
 
-           Tu IA local · Proyecto de estudio
+          Tu IA local · Proyecto de estudio
+~~~
 
 # Clawde
 
