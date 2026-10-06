@@ -64,6 +64,9 @@ Se comprobó qwen3-vl:8b con 16384 tokens mediante un ajuste en Open WebUI.
 
 ## Archivos del repositorio
 
+- .env.example: plantilla sin claves reales.
+- searxng/settings.example.yml: plantilla de búsqueda.
+- scripts/Preparar.ps1: preparación del entorno.
 - compose.yaml: servicios principales y volúmenes.
 - compose.override.yaml: servicios adicionales y personalización.
 - personalizacion/: CSS y logo.
@@ -71,21 +74,72 @@ Se comprobó qwen3-vl:8b con 16384 tokens mediante un ajuste en Open WebUI.
 - .github/workflows/: despliegue en Azure, si está presente.
 - .gitignore: archivos permitidos y exclusiones.
 
-## Instalación: estado actual
+## Instalación y preparación
 
-El repositorio todavía no permite reconstruir toda la instalación por sí solo.
+Requisitos previos: Git, Docker Desktop iniciado con contenedores Linux,
+WSL2 y GPU NVIDIA compatible con la configuración del proyecto.
 
-Falta documentar o incorporar:
+Para una instalación nueva:
 
-- .env.example sin secretos.
-- Plantilla de configuración de SearXNG.
-- Configuración de las integraciones de Open WebUI.
-- Workflows de ComfyUI y lista de modelos necesarios.
-- Scripts de instalación, respaldo y restauración.
+```powershell
+git clone https://github.com/pamunoz-des/clawde.git C:\AI\clawde
+Set-Location C:\AI\clawde
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Preparar.ps1
+```
 
-Se necesita un .env local con WEBUI_SECRET_KEY y OPEN_TERMINAL_API_KEY.
-Las carpetas y archivos requeridos por los montajes deben existir antes
-de iniciar Docker Compose.
+Si el repositorio es privado, se requiere una cuenta con permisos de acceso.
+
+El script Preparar.ps1:
+
+- Comprueba los archivos requeridos y la disponibilidad de Docker y Compose.
+- Crea las carpetas necesarias.
+- Genera .env con claves aleatorias diferentes para Open WebUI y Open Terminal.
+- Genera searxng/settings.yml desde la plantilla con una clave aleatoria nueva.
+- Conserva las configuraciones existentes.
+- Valida Compose sin iniciar contenedores ni descargar modelos.
+
+No publicar los archivos generados: contienen claves privadas.
+
+### Validación realizada
+
+El 5 de octubre de 2026 se comprobó la preparación desde un clon nuevo
+en el mismo equipo:
+
+- Se generaron .env y searxng/settings.yml.
+- Docker Compose validó la configuración.
+- Git ignoró ambos archivos privados y quedó sin cambios pendientes.
+- No se iniciaron servicios.
+
+Esta prueba confirma la preparación del entorno, no una instalación completa
+ni la recuperación del sistema en otro equipo.
+
+### Arranque de una instalación nueva
+
+Solo si no existe otra instalación con el mismo nombre de proyecto y puerto:
+
+```powershell
+docker compose up -d
+docker compose ps
+```
+
+La interfaz local utiliza http://localhost:3001.
+
+El archivo Compose fija el nombre de proyecto claude-casero.
+Para una instalación de prueba paralela deben cambiarse el nombre de proyecto
+y el puerto antes de iniciar servicios.
+
+### Configuración pendiente después del arranque
+
+- Descargar los modelos de Ollama.
+- Crear la cuenta inicial de Open WebUI.
+- Configurar la búsqueda mediante http://searxng:8080/search?q=<query>&format=json.
+- Configurar Open Terminal en http://open-terminal:8000 usando la clave local.
+- Configurar Knowledge y conversación por voz.
+- Preparar ComfyUI Desktop, sus modelos, workflows y conexión.
+
+Las instrucciones detalladas y los workflows todavía deben incorporarse.
+El repositorio no incluye conversaciones, documentos, modelos ni datos de
+una instalación existente.
 
 ## Operación
 
@@ -157,7 +211,7 @@ El botón Abrir Clawde apunta a localhost:3001 en el equipo del visitante.
 
 ## Pendientes
 
-- Instalación reproducible y documentación de integraciones.
+- Validar el arranque de una instalación nueva y documentar las integraciones.
 - Respaldo actualizado y respaldo separado de ComfyUI.
 - Programación autónoma y verificación de archivos generados.
 - Panel de archivos y entregables.
