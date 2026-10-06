@@ -27,3 +27,16 @@
 !/tools/
 /tools/*
 !/tools/coinmarketcap.py
+
+# Beta de escritorio
+!/desktop/
+/desktop/*
+!/desktop/main.js
+!/desktop/package.json
+!/desktop/package-lock.json
+!/desktop/assets/
+/desktop/assets/*
+!/desktop/assets/logo-clawde.png
+!/desktop/assets/clawde.ico
+/desktop/node_modules/
+/desktop/dist/

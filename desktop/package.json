@@ -1,0 +1,35 @@
+{
+    "name":  "clawde-desktop",
+    "version":  "0.1.0",
+    "private":  true,
+    "description":  "Clawde Local AI Lab - beta de escritorio",
+    "author":  "Patricio Muñoz",
+    "main":  "main.js",
+    "scripts":  {
+                    "start":  "electron .",
+                    "dist":  "electron-builder --win portable --x64"
+                },
+    "build":  {
+                  "appId":  "cl.clawde.desktop",
+                  "productName":  "Clawde",
+                  "directories":  {
+                                      "output":  "dist"
+                                  },
+                  "files":  [
+                                "main.js",
+                                "assets/**/*",
+                                "package.json"
+                            ],
+                  "win":  {
+                              "target":  "portable",
+                              "icon":  "assets/clawde.ico"
+                          },
+                  "portable":  {
+                                   "artifactName":  "Clawde-Beta-${version}.exe"
+                               }
+              },
+    "devDependencies":  {
+                            "electron":  "44.5.1",
+                            "electron-builder":  "26.15.3"
+                        }
+}
