@@ -115,3 +115,86 @@ body.dark .pending-label {
   width: min(380px, 100%);
   height: auto;
 }
+
+/* Creador y retrato ASCII */
+#creador {
+  margin: 56px 0;
+}
+.creator-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 28px;
+  align-items: start;
+}
+.creator-portrait {
+  margin: 0;
+  min-width: 0;
+}
+.ascii-scroll {
+  overflow-x: auto;
+  padding: 16px;
+  background: #171916;
+  color: #d6dfcb;
+  border-radius: 18px;
+}
+.ascii-portrait {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: "Courier New", monospace;
+  font-size: 4px;
+  line-height: 4px;
+  letter-spacing: 0;
+  white-space: pre;
+  font-variant-ligatures: none;
+}
+.creator-portrait figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.creator-story {
+  min-width: 0;
+}
+.creator-story p,
+.creator-story li {
+  line-height: 1.7;
+}
+.creator-story h4 {
+  margin-bottom: 8px;
+}
+.creator-story ul {
+  padding-left: 22px;
+}
+.creator-note {
+  font-size: 13px;
+  border-top: 1px solid #99999955;
+  padding-top: 16px;
+}
+@media (max-width: 800px) {
+  .creator-layout {
+    grid-template-columns: 1fr;
+  }
+}
+/* Proporción y contraste del retrato ASCII */
+#creador .ascii-scroll {
+  background: #faf9f5;
+  color: #252525;
+}
+#creador .ascii-portrait {
+  font-family: "Courier New", monospace;
+  font-size: 4px;
+  line-height: 5px;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+  width: max-content;
+}
+body.dark #creador .ascii-scroll {
+  background: #faf9f5;
+  color: #252525;
+}
