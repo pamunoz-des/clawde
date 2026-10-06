@@ -37,6 +37,11 @@ function crearVentana() {
     }
   });
 
+  ventana.webContents.on("page-title-updated", (event) => {
+    event.preventDefault();
+    ventana.setTitle("Clawde · Beta");
+  });
+
   ventana.webContents.setWindowOpenHandler(({ url }) => {
     abrirEnNavegador(url);
     return { action: "deny" };
