@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PolyTalk Casero: proyecto de traduccion de voz a voz con inteligencia artificial local.">
+  <title>PolyTalk Casero | Clawde Lab</title>
+  <link rel="icon" href="../logo-clawde.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .project-nav { display:flex; gap:18px; flex-wrap:wrap; margin-bottom:32px; }
+    .project-nav a { color:#a65336; font-weight:600; }
+    .project-hero { padding:20px 0 32px; }
+    .project-hero h1 { font-size:clamp(36px,6vw,64px); }
+    .project-tag { text-transform:uppercase; letter-spacing:.15em; font-size:12px; font-weight:700; }
+    .project-lead { max-width:780px; font-size:clamp(18px,2.5vw,24px); }
+    .project-section { margin:40px 0; }
+    .project-flow { display:flex; align-items:stretch; flex-wrap:wrap; gap:12px; }
+    .project-step { flex:1 1 170px; background:#fffdf8; border:1px solid #dedbd2; border-radius:16px; padding:20px; }
+    .project-arrow { align-self:center; font-size:24px; color:#a65336; }
+    .project-link { display:inline-block; padding:12px 20px; border-radius:10px; background:#a65336; color:white; text-decoration:none; }
+    .project-note { padding:16px 20px; border-left:4px solid #a65336; background:#a6533610; border-radius:8px; }
+    body.dark .project-step { background:#2b2b28; border-color:#55534c; }
+    body.dark .project-nav a { color:#e7a58b; }
+    @media(max-width:600px) { .project-arrow { display:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="project-nav" aria-label="Navegacion">
+      <a href="../index.html">Clawde / Inicio</a>
+      <a href="#arquitectura">Arquitectura</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#desarrollo">Desarrollo</a>
+    </nav>
+    <div class="project-hero">
+      <img src="../logo-clawde.png" alt="Clawde" width="100" height="100">
+      <p class="project-tag">Clawde Lab / Proyecto de IA local</p>
+      <h1>PolyTalk Casero</h1>
+      <p class="project-lead">
+        Traduccion de voz a voz mediante modelos de inteligencia artificial,
+        ejecutados localmente y coordinados con Docker.
+      </p>
+      <a class="project-link" href="https://github.com/pamunoz-des/polytalk-casero" target="_blank" rel="noopener noreferrer">Ver codigo en GitHub</a>
+      <a class="project-link" href="http://localhost:9000" target="_blank" rel="noopener noreferrer">
+        Abrir PolyTalk local
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="arquitectura" class="project-section">
+      <h2>De una voz a otra</h2>
+      <div class="project-flow">
+        <div class="project-step"><h3>01 / Escuchar</h3><p>Captura de audio y reconocimiento de voz (STT).</p></div>
+        <span class="project-arrow" aria-hidden="true">&#8594;</span>
+        <div class="project-step"><h3>02 / Traducir</h3><p>Procesamiento del texto en el idioma de destino.</p></div>
+        <span class="project-arrow" aria-hidden="true">&#8594;</span>
+        <div class="project-step"><h3>03 / Hablar</h3><p>Sintesis de voz (TTS) para reproducir el resultado.</p></div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="project-section">
+      <h2>Motor tecnologico</h2>
+      <div class="cards">
+        <article class="card"><h3>Parakeet</h3><p>Motor de reconocimiento de voz utilizado en el pipeline STT.</p></article>
+        <article class="card"><h3>XTTS</h3><p>Sintesis de voz multilingue y experimentacion con clonacion de voz.</p></article>
+        <article class="card"><h3>OmniVoice PRO</h3><p>Motor de voz evaluado como componente externo del laboratorio.</p></article>
+        <article class="card"><h3>Docker</h3><p>Servicios independientes para facilitar la operacion y las pruebas locales.</p></article>
+        <article class="card"><h3>GPU NVIDIA</h3><p>Aceleracion de modelos de inteligencia artificial compatibles.</p></article>
+        <article class="card"><h3>PolyTalk CE</h3><p>Proyecto base sobre el que se desarrollan las personalizaciones Casero.</p></article>
+      </div>
+    </section>
+
+    <section id="desarrollo" class="project-section">
+      <h2>Estado del proyecto</h2>
+      <div class="card">
+        <h3>Laboratorio en desarrollo</h3>
+        <p>Se han implementado servicios locales de reconocimiento y sintesis de voz.
+        Continuan las pruebas de integracion, documentacion y reproducibilidad.</p>
+        <p><strong>Rama de desarrollo:</strong> develop-casero</p>
+        <p><strong>Version base:</strong> PolyTalk CE 0.4.0</p>
+        <p><strong>Repositorio:</strong> privado en GitHub.</p>
+      </div>
+      <p class="project-note">
+        Proyecto experimental de uso local. Los modelos, voces y componentes
+        externos conservan sus respectivas condiciones de licencia.
+        Clawde y PolyTalk son proyectos separados; esta pagina es informativa.
+      </p>
+    </section>
+
+    <footer>
+      <a href="../index.html">Volver a Clawde</a>
+      <button id="theme-toggle" type="button">Tema oscuro</button>
+    </footer>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
