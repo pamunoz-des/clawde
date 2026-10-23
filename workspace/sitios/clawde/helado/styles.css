@@ -8,3 +8,12 @@
 [hidden]{display:none!important}
 /* Centra el estado de cámara inactiva por encima del contenedor del lector. */
 .camera-placeholder{position:absolute;inset:0}
+
+/* Datito — mascota de la campaña, sin alterar el lector de códigos. */
+.datito-visual{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;padding:16px 0}
+.datito-halo{position:absolute;inset:8% 9%;background:#dceee6;border-radius:46% 54% 52% 48%;transform:rotate(-9deg)}
+.datito-figure{position:relative;margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;width:min(100%,360px)}
+.datito-img{display:block;width:100%;max-height:320px;object-fit:contain;background:#fff;border:5px solid #fff;border-radius:24px;box-shadow:0 10px 30px #1431391c}
+.datito-figure figcaption{font-weight:800;color:#287766;text-align:center;font-size:14px;background:#f1f8ee;padding:9px 14px;border-radius:100px}
+@media(max-width:780px){.datito-figure{width:min(100%,260px)}.datito-img{max-height:260px}}
+@media(max-width:580px){.datito-visual{padding:8px 0 15px}.datito-figure{width:min(100%,275px)}.datito-img{max-height:245px}.datito-figure figcaption{font-size:12px}}
