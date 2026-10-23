@@ -1,0 +1,34 @@
+{
+  "campana": "Sorteo Helados",
+  "codigos": [
+    {
+      "codigo": "7801234567894",
+      "premio": "¡Un helado gratis!",
+      "descripcion": "Presenta tu código para coordinar la entrega de tu premio."
+    },
+    {
+      "codigo": "7801234567887",
+      "premio": "¡2 helados gratis!",
+      "descripcion": "Felicitaciones: ¡tienes una deliciosa sorpresa doble!"
+    },
+    {
+      "codigo": "7801234567870",
+      "premio": "¡Una caja de helados!",
+      "descripcion": "¡Qué buena suerte! Guarda tu código para validar el premio."
+    },
+    {
+      "codigo": "7801234567863",
+      "premio": "¡Un cupón de descuento!",
+      "descripcion": "Ganaste un descuento para tu próxima compra."
+    }
+  ],
+  "mensajesSinPremio": [
+    "¡Sigue sonriendo! Las mejores sorpresas aparecen cuando menos lo esperas.",
+    "Hoy no tocó premio, ¡pero siempre hay un buen motivo para disfrutar un helado!",
+    "La suerte cambia de sabor. ¡No dejes de intentarlo!",
+    "Cada intento es una nueva historia. ¡Que la próxima sea ganadora!",
+    "Un helado y una sonrisa también hacen que el día sea especial.",
+    "¡Las cosas buenas siguen llegando! Que este sea solo el comienzo.",
+    "No hubo premio esta vez, pero las buenas vibras nunca faltan."
+  ]
+}
