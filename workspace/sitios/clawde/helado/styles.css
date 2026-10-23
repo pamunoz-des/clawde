@@ -17,3 +17,10 @@
 .datito-figure figcaption{font-weight:800;color:#287766;text-align:center;font-size:14px;background:#f1f8ee;padding:9px 14px;border-radius:100px}
 @media(max-width:780px){.datito-figure{width:min(100%,260px)}.datito-img{max-height:260px}}
 @media(max-width:580px){.datito-visual{padding:8px 0 15px}.datito-figure{width:min(100%,275px)}.datito-img{max-height:245px}.datito-figure figcaption{font-size:12px}}
+
+/* Uptime con helado, imagen transparente sin recuadro */
+.datito-halo{inset:13% 12%;background:#e2eee8;opacity:.85}
+.datito-figure{width:min(100%,410px)}
+.datito-img{border:0;box-shadow:none;background:transparent;border-radius:0;max-height:380px;object-fit:contain;filter:drop-shadow(0 12px 16px #1431391c)}
+@media(max-width:780px){.datito-figure{width:min(100%,310px)}.datito-img{max-height:300px}}
+@media(max-width:580px){.datito-figure{width:min(100%,290px)}.datito-img{max-height:270px}}
