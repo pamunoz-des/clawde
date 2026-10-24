@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PolyTalk Casero: proyecto de traduccion de voz a voz con inteligencia artificial local.">
-  <title>PolyTalk Casero | Clawde Lab</title>
+  <meta name="description" content="PolyTalk Casero 2.0: traducción de voz en tiempo real, texto a voz, OmniVoice PRO y clonación de voces con inteligencia artificial local.">
+  <title>PolyTalk Casero 2.0 | Clawde Lab</title>
   <link rel="icon" href="../logo-clawde.png" type="image/png">
   <link rel="stylesheet" href="../styles.css">
   <style>
@@ -30,13 +30,14 @@
     <nav class="project-nav" aria-label="Navegacion">
       <a href="../index.html">Clawde / Inicio</a>
       <a href="#arquitectura">Arquitectura</a>
+      <a href="#novedades-polytalk-2">Novedades 2.0</a>
       <a href="#tecnologias">Tecnologias</a>
       <a href="#desarrollo">Desarrollo</a>
     </nav>
     <div class="project-hero">
       <img src="../logo-clawde.png" alt="Clawde" width="100" height="100">
       <p class="project-tag">Clawde Lab / Proyecto de IA local</p>
-      <h1>PolyTalk Casero</h1>
+      <h1>PolyTalk Casero 2.0</h1>
       <p class="project-lead">
         Traduccion de voz a voz mediante modelos de inteligencia artificial,
         ejecutados localmente y coordinados con Docker.
@@ -60,6 +61,59 @@
       </div>
     </section>
 
+    <section id="novedades-polytalk-2" class="project-section">
+  <h2>PolyTalk 2.0 — Nuevas funcionalidades</h2>
+  <p>
+    Una plataforma experimental de inteligencia artificial local
+    para reconocer, traducir y generar voz, con servicios independientes
+    ejecutados mediante Docker.
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Traducción de voz en tiempo real</h3>
+      <p>Captura de voz desde el micrófono, transcripción del habla
+      y visualización de la traducción durante la conversación.</p>
+    </article>
+
+    <article class="card">
+      <h3>Texto → Traducción → Voz</h3>
+      <p>Nuevo módulo para escribir textos, seleccionar idiomas,
+      obtener traducciones y convertirlas en audio.</p>
+    </article>
+
+    <article class="card">
+      <h3>OmniVoice PRO integrado</h3>
+      <p>Motor de generación de voz conectado a PolyTalk.
+      Síntesis validada utilizando una voz personalizada.</p>
+    </article>
+
+    <article class="card">
+      <h3>Clonación de voz</h3>
+      <p>Selección y utilización de voces personalizadas.
+      Se ha validado la generación de audio con la voz PatoTest.</p>
+    </article>
+
+    <article class="card">
+      <h3>Reproducción y descarga WAV</h3>
+      <p>Escucha los audios generados directamente desde
+      PolyTalk o descárgalos en formato WAV.</p>
+    </article>
+
+    <article class="card">
+      <h3>Interfaz adaptable</h3>
+      <p>Cuadros de texto responsivos, selectores de idiomas,
+      controles de voz y acceso desde computadores y celulares
+      conectados a la red local.</p>
+    </article>
+  </div>
+
+  <p class="project-note">
+    Estas funcionalidades están implementadas en el entorno local.
+    La compatibilidad con cada idioma, motor y voz depende
+    de los modelos instalados y su configuración.
+  </p>
+</section>
     <section id="tecnologias" class="project-section">
       <h2>Motores de inteligencia artificial</h2>
       <p>PolyTalk Casero permite experimentar con diferentes motores de reconocimiento y sintesis de voz, segun la configuracion y los componentes disponibles.</p>
@@ -84,7 +138,7 @@
         </article>
         <article class="card">
           <h3>OmniVoice PRO</h3>
-          <p>Motor de generacion de voz evaluado como componente externo del laboratorio.</p>
+          <p>Motor de generación de voz integrado en PolyTalk 2.0, con síntesis y uso de voces personalizadas validados.</p>
         </article>
         <article class="card">
           <h3>Supertonic</h3>
@@ -120,9 +174,9 @@
     <section id="desarrollo" class="project-section">
       <h2>Estado del proyecto</h2>
       <div class="card">
-        <h3>Laboratorio en desarrollo</h3>
+        <h3>PolyTalk 2.0 — Laboratorio operativo</h3>
         <p>Se han implementado servicios locales de reconocimiento y sintesis de voz.
-        Continuan las pruebas de integracion, documentacion y reproducibilidad.</p>
+        El módulo Texto → Traducción → Voz y la generación de audio con OmniVoice PRO han sido validados. Continúan las pruebas de compatibilidad, documentación y rendimiento.</p>
         <p><strong>Rama de desarrollo:</strong> develop-casero</p>
         <p><strong>Version base:</strong> PolyTalk CE 0.4.0</p>
         <p><strong>Repositorio:</strong> privado en GitHub.</p>
