@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "route": "/polytalk",
+      "redirect": "/localtalk/",
+      "statusCode": 301
+    },
+    {
+      "route": "/polytalk/",
+      "redirect": "/localtalk/",
+      "statusCode": 301
+    },
+    {
+      "route": "/polytalk/index.html",
+      "redirect": "/localtalk/",
+      "statusCode": 301
+    }
+  ]
+}
