@@ -2,24 +2,24 @@
   "campana": "Sorteo Helados",
   "codigos": [
     {
-      "codigo": "7801234567894",
+      "codigo": "LX03T",
       "premio": "¡Un helado gratis!",
       "descripcion": "Presenta tu código para coordinar la entrega de tu premio."
     },
     {
-      "codigo": "7801234567887",
-      "premio": "¡2 helados gratis!",
-      "descripcion": "Felicitaciones: ¡tienes una deliciosa sorpresa doble!"
+      "codigo": "111222553",
+      "premio": "¡1 Premio Sopresa!",
+      "descripcion": "Felicitaciones: ¡Presenta tu código para coordinar la entrega de tu premio!"
     },
     {
-      "codigo": "7801234567870",
-      "premio": "¡Una caja de helados!",
+      "codigo": "7801234",
+      "premio": "¡Domingo Libre!",
       "descripcion": "¡Qué buena suerte! Guarda tu código para validar el premio."
     },
     {
-      "codigo": "7801234567863",
-      "premio": "¡Un cupón de descuento!",
-      "descripcion": "Ganaste un descuento para tu próxima compra."
+      "codigo": "DE04T",
+      "premio": "¡Ganaste un abrazo!",
+      "descripcion": "Abraza a un compañero o compañera para validar tu premio"
     }
   ],
   "mensajesSinPremio": [
