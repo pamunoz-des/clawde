@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <base href="/helado/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#132d35">
+  <meta name="description" content="Escanea el código de barras de tu helado y descubre si ganaste un premio.">
+  <title>¡Escanea y gana! | Sorteo de helados</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Inicio Sorteo Helados">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>SORTEO<span class="brand-secondary">HELADOS</span></span>
+      </a>
+      <span class="header-label"><span class="header-dot"></span> Campaña de premios</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="main-title">
+      <div class="hero-copy">
+        <div class="eyebrow">🍦 UNA SORPRESA EN CADA HELADO</div>
+        <h1 id="main-title">Escanea.<br>Descubre.<br><em>¡Gana!</em></h1>
+        <p>Apunta la cámara al código de barras de tu helado y descubre al instante si tiene un premio para ti.</p>
+        <div class="hero-chips" aria-label="Ventajas">
+          <span>✦ Fácil y rápido</span>
+          <span>✦ Resultado inmediato</span>
+        </div>
+      </div>
+      <div class="ice-visual" aria-hidden="true">
+        <div class="ice-halo"></div>
+        <div class="ice-cream"><div class="scoop scoop-top"></div><div class="scoop scoop-main"></div><div class="cone"></div><div class="cone-lines"></div></div>
+        <div class="visual-star s1">✳</div><div class="visual-star s2">✦</div><div class="visual-star s3">✳</div>
+        <div class="visual-sticker">¿HOY ES<br>TU DÍA? <span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="game-section" aria-labelledby="scanner-title">
+      <div class="container">
+        <div class="game-layout">
+          <div class="scan-card">
+            <div class="card-intro">
+              <div class="step-number">01 / ESCANEAR</div>
+              <h2 id="scanner-title">Encuentra tu código</h2>
+              <p>Permite el acceso a la cámara y ubica el código dentro del recuadro.</p>
+            </div>
+            <div class="camera-shell" id="camera-shell">
+              <div id="lector" aria-label="Vista previa de la cámara"></div>
+              <div id="camera-placeholder" class="camera-placeholder">
+                <svg width="110" height="78" viewBox="0 0 110 78" aria-hidden="true" fill="none">
+                  <path d="M21 12H10V25M89 12h11v13M21 67H10V54M89 67h11V54" stroke="#A4C4C5" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M28 22v33M36 22v33M43 22v33M52 22v33M58 22v33M69 22v33M76 22v33M83 22v33" stroke="#D7E8E8" stroke-width="3"/>
+                </svg>
+                <span>Tu cámara aparecerá aquí</span>
+              </div>
+            </div>
+            <div id="status" class="status" role="status" aria-live="polite">Cargando lista de premios…</div>
+            <div class="scan-actions">
+              <button id="start-btn" class="primary-btn" type="button" disabled>◉ &nbsp; Activar cámara</button>
+              <button id="stop-btn" class="ghost-btn" type="button" hidden>Detener cámara</button>
+              <label class="file-btn" for="photo-input">▧ &nbsp; Escanear desde foto</label>
+              <input id="photo-input" type="file" accept="image/*" aria-label="Subir foto de un código de barras" disabled>
+            </div>
+            <div class="separator"><span>O ingresa tu código manualmente</span></div>
+            <form id="manual-form" class="manual-form" autocomplete="off">
+              <label class="sr-only" for="manual-code">Código de barras</label>
+              <input id="manual-code" type="text" inputmode="text" maxlength="64" placeholder="Ej. 7801234567894" spellcheck="false" required disabled>
+              <button class="check-btn" id="check-btn" type="submit" disabled>Consultar <span aria-hidden="true">→</span></button>
+            </form>
+          </div>
+
+          <div class="result-card" id="result-card">
+            <div class="step-number">02 / DESCUBRIR</div>
+            <div class="result-content" id="result-content" aria-live="polite">
+              <div class="waiting-icon" aria-hidden="true">🎁</div>
+              <h2>¡Tu sorpresa<br>te espera!</h2>
+              <p>Escanea el código para saber si ganaste uno de nuestros premios.</p>
+            </div>
+            <button id="retry-btn" class="retry-btn" type="button" hidden>↻ &nbsp; Escanear otro código</button>
+            <div class="result-footnote">✨ Cada helado es una nueva oportunidad</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how container" aria-labelledby="how-title">
+      <div class="how-heading"><span class="step-number">ASÍ DE FÁCIL</span><h2 id="how-title">Tres pasos para participar</h2></div>
+      <div class="how-grid">
+        <article><div class="how-icon">🍦</div><strong>1. Busca tu helado</strong><p>Identifica el código de barras en su envase.</p></article>
+        <article><div class="how-icon">▥</div><strong>2. Escanea el código</strong><p>Utiliza tu cámara, una foto o el ingreso manual.</p></article>
+        <article><div class="how-icon">🎉</div><strong>3. Descubre el resultado</strong><p>Conoce tu premio o recibe una frase para seguir intentando.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span>✳ SORTEO HELADOS</span><span>¡Que la suerte te acompañe!</span></div></footer>
+</body>
+</html>

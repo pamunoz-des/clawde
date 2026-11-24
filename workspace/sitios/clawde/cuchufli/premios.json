@@ -1,0 +1,29 @@
+{
+  "campana": "Sorteo Helados",
+  "codigos": [
+    {
+      "codigo": "LX03T",
+      "premio": "¡Vale Otro!",
+      "descripcion": "Presenta tu código para coordinar la entrega de tu premio."
+    },
+    {
+      "codigo": "111222553",
+      "premio": "¡1 Premio Sopresa!",
+      "descripcion": "Felicitaciones: ¡Presenta tu código para coordinar la entrega de tu premio!"
+    },
+    {
+      "codigo": "7801234",
+      "premio": "¡Domingo Libre!",
+      "descripcion": "¡Qué buena suerte! Guarda tu código para validar el premio."
+    }
+  ],
+  "mensajesSinPremio": [
+    "¡Sigue sonriendo! Las mejores sorpresas aparecen cuando menos lo esperas.",
+    "Hoy no tocó premio, ¡pero siempre hay un buen motivo para disfrutar un helado!",
+    "La suerte cambia de sabor. ¡No dejes de intentarlo!",
+    "Cada intento es una nueva historia. ¡Que la próxima sea ganadora!",
+    "Un helado y una sonrisa también hacen que el día sea especial.",
+    "¡Las cosas buenas siguen llegando! Que este sea solo el comienzo.",
+    "No hubo premio esta vez, pero las buenas vibras nunca faltan."
+  ]
+}
