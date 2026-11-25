@@ -2,77 +2,77 @@
   "campana": "Día del Cuchuflí",
   "codigos": [
     {
-      "codigo": "PREM001",
+      "codigo": "M001",
       "premio": "¡Vale Otro Cuchuflí!",
       "descripcion": "Presenta tu código para recibir otro cuchuflí."
     },
     {
-      "codigo": "PREM002",
+      "codigo": "M002",
       "premio": "¡Premio Sorpresa!",
       "descripcion": "Uptime tiene una sorpresa preparada para ti."
     },
     {
-      "codigo": "PREM003",
+      "codigo": "M003",
       "premio": "¡Domingo Libre!",
       "descripcion": "Premio simbólico, sujeto a contingencias."
     },
     {
-      "codigo": "PREM006",
+      "codigo": "M006",
       "premio": "¡Doble Manjar!",
       "descripcion": "Una doble dosis de felicidad."
     },
     {
-      "codigo": "PREM007",
+      "codigo": "M007",
       "premio": "¡Almuerzo de Campeones!",
       "descripcion": "Coordina la entrega de tu premio."
     },
     {
-      "codigo": "PREM009",
+      "codigo": "M009",
       "premio": "¡Chapita de Uptime!",
       "descripcion": "Ya eres parte miembrio oficial de la estabilidad"
     },
     {
-      "codigo": "PREM010",
+      "codigo": "M010",
       "premio": "¡Reunión Cancelada!",
       "descripcion": "Se cancela la reu eres libre..."
     },
     {
-      "codigo": "PREM011",
+      "codigo": "M011",
       "premio": "¡Cuchuflí en Alta Disponibilidad!",
       "descripcion": "Dos cuchuflíes en configuración activo-activo."
     },
     {
-      "codigo": "PREM012",
+      "codigo": "M012",
       "premio": "¡Jefe por 5 Minutos!",
       "descripcion": "Cinco minutos de poder imaginario."
     },
     {
-      "codigo": "PREM014",
+      "codigo": "M014",
       "premio": "¡Cuchuflí de Emergencia!",
       "descripcion": "Vale por 1 CAB offline."
     },
     {
-      "codigo": "PREM015",
+      "codigo": "M015",
       "premio": "¡Rollback de Calorías!",
       "descripcion": "Las calorías han sido simbólicamente revertidas."
     },
     {
-      "codigo": "PREM016",
+      "codigo": "M016",
       "premio": "¡Bono de Manjar!",
       "descripcion": "Tu cuchufli ahora es mas dulce."
     },
     {
-      "codigo": "PREM017",
+      "codigo": "M017",
       "premio": "¡Cuchuflí Certificado por el CAB!",
       "descripcion": "Consumo aprobado sin observaciones."
     },
     {
-      "codigo": "PREM018",
+      "codigo": "M018",
       "premio": "¡Licencia para Comer Cuchuflíes!",
       "descripcion": "Autorización para disfrutar durante todo el día."
     },
     {
-      "codigo": "PREM019",
+      "codigo": "M019",
       "premio": "¡Cuchuflí Legendario!",
       "descripcion": "Ganaste el cuchufli legendario."
     }
