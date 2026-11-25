@@ -1,29 +1,112 @@
 {
-  "campana": "Sorteo Helados",
+  "campana": "Día del Cuchuflí",
   "codigos": [
     {
-      "codigo": "LX03T",
-      "premio": "¡Vale Otro!",
-      "descripcion": "Presenta tu código para coordinar la entrega de tu premio."
+      "codigo": "PREM001",
+      "premio": "¡Vale Otro Cuchuflí!",
+      "descripcion": "Presenta tu código para recibir otro cuchuflí."
     },
     {
-      "codigo": "111222553",
-      "premio": "¡1 Premio Sopresa!",
-      "descripcion": "Felicitaciones: ¡Presenta tu código para coordinar la entrega de tu premio!"
+      "codigo": "PREM002",
+      "premio": "¡Premio Sorpresa!",
+      "descripcion": "Uptime tiene una sorpresa preparada para ti."
     },
     {
-      "codigo": "7801234",
+      "codigo": "PREM003",
       "premio": "¡Domingo Libre!",
-      "descripcion": "¡Qué buena suerte! Guarda tu código para validar el premio."
+      "descripcion": "Premio simbólico, sujeto a contingencias."
+    },
+    {
+      "codigo": "PREM006",
+      "premio": "¡Doble Manjar!",
+      "descripcion": "Una doble dosis de felicidad."
+    },
+    {
+      "codigo": "PREM007",
+      "premio": "¡Almuerzo de Campeones!",
+      "descripcion": "Coordina la entrega de tu premio."
+    },
+    {
+      "codigo": "PREM009",
+      "premio": "¡Chapita de Uptime!",
+      "descripcion": "Ya eres parte miembrio oficial de la estabilidad"
+    },
+    {
+      "codigo": "PREM010",
+      "premio": "¡Reunión Cancelada!",
+      "descripcion": "Se cancela la reu eres libre..."
+    },
+    {
+      "codigo": "PREM011",
+      "premio": "¡Cuchuflí en Alta Disponibilidad!",
+      "descripcion": "Dos cuchuflíes en configuración activo-activo."
+    },
+    {
+      "codigo": "PREM012",
+      "premio": "¡Jefe por 5 Minutos!",
+      "descripcion": "Cinco minutos de poder imaginario."
+    },
+    {
+      "codigo": "PREM014",
+      "premio": "¡Cuchuflí de Emergencia!",
+      "descripcion": "Vale por 1 CAB offline."
+    },
+    {
+      "codigo": "PREM015",
+      "premio": "¡Rollback de Calorías!",
+      "descripcion": "Las calorías han sido simbólicamente revertidas."
+    },
+    {
+      "codigo": "PREM016",
+      "premio": "¡Bono de Manjar!",
+      "descripcion": "Tu cuchufli ahora es mas dulce."
+    },
+    {
+      "codigo": "PREM017",
+      "premio": "¡Cuchuflí Certificado por el CAB!",
+      "descripcion": "Consumo aprobado sin observaciones."
+    },
+    {
+      "codigo": "PREM018",
+      "premio": "¡Licencia para Comer Cuchuflíes!",
+      "descripcion": "Autorización para disfrutar durante todo el día."
+    },
+    {
+      "codigo": "PREM019",
+      "premio": "¡Cuchuflí Legendario!",
+      "descripcion": "Ganaste el cuchufli legendario."
     }
   ],
   "mensajesSinPremio": [
-    "¡Sigue sonriendo! Las mejores sorpresas aparecen cuando menos lo esperas.",
-    "Hoy no tocó premio, ¡pero siempre hay un buen motivo para disfrutar un helado!",
-    "La suerte cambia de sabor. ¡No dejes de intentarlo!",
-    "Cada intento es una nueva historia. ¡Que la próxima sea ganadora!",
-    "Un helado y una sonrisa también hacen que el día sea especial.",
-    "¡Las cosas buenas siguen llegando! Que este sea solo el comienzo.",
-    "No hubo premio esta vez, pero las buenas vibras nunca faltan."
+    "¡No ganaste, pero tienes un cuchuflí! Técnicamente, ya eres ganador.",
+    "Error 404: Premio no encontrado. Manjar disponible.",
+    "Tu premio está en mantenimiento programado.",
+    "El CAB rechazó tu premio, pero aprobó el consumo del cuchuflí.",
+    "Tu suerte está experimentando una degradación temporal.",
+    "Incidente resuelto: el cuchuflí estaba delicioso.",
+    "Tu premio quedó en el backlog. Sin fecha comprometida.",
+    "Uptime confirma que tu felicidad sigue operativa al 99,9%.",
+    "Se ejecutó un rollback del premio, pero no del cuchuflí.",
+    "No hubo premio, pero tampoco hubo un P1. ¡Eso ya es ganar!",
+    "Tu suerte está migrando a la nube.",
+    "Tu solicitud de premio superó el SLA.",
+    "Premio no disponible. Servicio de manjar operativo.",
+    "Tu premio quedó pendiente de aprobación presupuestaria.",
+    "No encontramos tu premio en Producción. Quizás quedó en QA.",
+    "El cuchuflí pasó todas las pruebas. Tu suerte necesita ajustes.",
+    "Tu premio está en contingencia. Activaremos el DRP.",
+    "El servidor de premios está ocupado. El de manjar funciona perfectamente.",
+    "Tu premio fue víctima de un cambio no autorizado.",
+    "El monitoreo detectó niveles críticos de antojo.",
+    "Tu cuchuflí tiene más estabilidad que algunas aplicaciones.",
+    "El manjar está en alta disponibilidad. Tu premio, lamentablemente, no.",
+    "Premio rechazado por falta de evidencias en el ticket.",
+    "No ganaste, pero tu cuchuflí cumple con todos los estándares de calidad.",
+    "La suerte es temporal. El amor por el manjar es permanente.",
+    "Uptime recomienda consumir el cuchuflí antes de que expire el SLA.",
+    "El premio está en otra región de Azure.",
+    "Tu suerte necesita un reinicio. Tu cuchuflí no.",
+    "Transacción exitosa: un cuchuflí menos, una sonrisa más.",
+    "¡Feliz Día del Cuchuflí! Gracias por ser parte del equipo."
   ]
 }
